@@ -1,12 +1,16 @@
-# React + Vite
+# React Protected Login App with API Integration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that allows users to log in and access a protected page.  
+After a successful login, users are redirected to a landing page that includes:
 
-Currently, two official plugins are available:
+- A **user trust counter** that increases with animation delay.
+- A **list of dog breeds** fetched from the Dog CEO API (`https://dog.ceo/api/breeds/list/all`).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app uses **local storage** to store the authentication state, so the user remains logged in after refreshing the page until they log out.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Main Features
+- Secure login system
+- Protected route for the landing page
+- API data fetching and display
+- Responsive UI with Tailwind CSS
