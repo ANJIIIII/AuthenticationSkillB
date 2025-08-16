@@ -76,6 +76,20 @@ const BinancePage = ({ logout }) => {
                 </div>
             </section>
 
+            
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Trusted by millions worldwide
+            </h2>
+            <div className="text-6xl font-bold text-yellow-600 animate-pulse">
+              {trustCounter.toLocaleString()}+
+            </div>
+            <p className="text-gray-600 mt-2">Users trust our platform</p>
+          </div>
+        </div>
+      </section>
 
 
 
